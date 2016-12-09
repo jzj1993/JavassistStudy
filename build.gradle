@@ -1,0 +1,17 @@
+group 'com.jzj.gradle'
+version '0.0.1'
+
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    compile localGroovy()
+    compile gradleApi()
+    compile 'com.android.tools.build:gradle:2.1.0'
+    compile 'org.javassist:javassist:3.20.0-GA'
+}
